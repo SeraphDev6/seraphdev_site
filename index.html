@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/solid.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
+    <script src="assets/js/functions.js"></script>
+    <title>SeraphDev</title>
+    <meta name="description" content="The Portfolio site of Wesley Giles, aka SeraphDev.">
+    <meta name="keywords" content="bootstrap, sass, javascript, web dev, development, SeraphDev, junior developer, portfolio, HTML, CSS, SCSS">
+</head>
+<body>
+    <!-- NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top menu shadow fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.svg" alt="" width="auto" height="50" class="d-inline-block align-text-top">
+            <img src="assets/img/NamePlate.svg" alt="" width="auto" height="50" class="d-inline-block align-text-top">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#wave-begin">Interests</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Suggestions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Social Links
+                </a>
+                <ul class="dropdown-menu bg-primary shadow" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://github.com/SeraphDev6" target="_blank">GitHub</a></li>
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/wgiles6/"target="_blank">LinkedIn</a></li>
+                  <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCJFH36x8g7vvsoIY4H4a-Yw"target="_blank">YouTube</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--Intro Section -->
+<section id="home" class="intro-section">
+  <div class="container">
+    <div class="row">
+      <!--Start Intro Content-->
+      <div class="col-md-6 intros">
+      <h1 class="display-2">
+        <span class="display-2--intro">Hey, I'm SeraphDev!</span>
+        <span class="display-2--description lh-base">I believe that technology has the power to elevate everyone's life, and it's my goal to make that happen!</span>
+      </h1>
+    </div>
+    <!--Start Video Content-->
+      <div class="col-md-6 intros text-end">
+        <div class="video-box">
+          <img src="assets/img/Startup_Monochromatic.svg" alt="Video illustration" class="img-fluid" style="width: 100%; height: auto;">
+          <a href="#" class="glightbox">
+            <span>
+              <i class="fas fa-play-circle"></i>
+            </span>
+            <span class="border-animation border-animation--border-1"></span>
+            <span class="border-animation border-animation--border-2"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Intersts section-->
+<section id="interests" class="interest-section">
+  <div id="overlay">
+    <img src="assets/img/wave.svg" alt="" id="wave-begin">
+    <div class="container px-4">
+      <div class="row gx-5">
+        <div class="col-md-2"> </div>
+        <div class="col-md-8">
+          <div class="text-box text-center" id="interest-box">
+            <p class="display-2">
+              <span class="display-2--intro">Technology is constantly evolving</span>
+              <span class="display-2--description lh-base">Here are just some of the ways I try to stay on the cutting edge!</span>
+            </h1>
+          </div>
+        </div>
+        <div class="col-md-2"> </div>
+      </div>
+      <div class="row">
+        <a class="col" onclick="changeTextBox('3dprint')">
+          <div class="text-box text-center hover-zoom">
+            <img src="assets/img/3D_Print_illustration.svg" alt="3d-Printing" class="img-fluid">
+            <span class="display-2--description lh-base">3D Printing</span>
+          </div>
+        </a>
+          <a class="col" onclick="changeTextBox('compsci')">
+            <div class="text-box text-center grows hover-zoom">
+              <img src="assets/img/Coding _Monochromatic.svg" alt="Computer Science" class="img-fluid">
+              <span class="display-2--description lh-base">Computer Science</span>
+            </div>
+        </a>
+        <a class="col" onclick="changeTextBox('education')">
+          <div class="text-box text-center grows hover-zoom">
+            <img src="assets/img/Innovation _Isometric.svg" alt="Innovation" class="img-fluid">
+            <span class="display-2--description lh-base">Education</span>
+          </div>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="collapsable closed text-box text-center" id="3dprint">
+            <h1>
+              3D Printing
+            </h1>
+            <p>
+              Bringing digital data into the physical world is one of the coolest innovations in recent history. The applications of 3D printing span multiple industries, from manufacturing to education, and even medicine! I have been exploring both FDM and SLA printing on my own, using models foound on the internet, as well as my own models made with Blender and TinkerCAD.
+            </p>
+          </div>
+          <div class="collapsable closed text-box text-center" id="compsci">
+            <h1>
+              Computer Science
+            </h1>
+            <p>
+              Computers have integrated themselves into our daily lives, and can provide immense value to those able to use them effectively. I love exploring different applications of computers, from code based music production using <a href="https://sonic-pi.net/" target="_blank">Sonic Pi</a>, to developing web pages, such as this one, and even developing my own video games with <a href="https://unity.com/" target="_blank">Unity3D!</a> I truly believe technology can help everyone express themselves, all it takes is getting started.
+            </p>
+          </div>
+          <div class="collapsable closed text-box text-center" id="education">
+            <h1>
+              Education
+            </h1>
+            <p>
+              Frank Oppenheimer once said <em>The best way to learn is to teach.</em> I wholeheartedly agree with this statement and have spent several years developing and implementing STEM curriculum for children ages 5-14. This experience has shown me the importance of computer science in everyone's lives and sparked a passion to pursue a further career in software development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/img/wave.svg" alt="" id="wave-end"style="transform:rotate(180deg);">
+  </div>
+</section>
+<div style="height:9000px;"></div>
+    <script src="assets/vendors/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox= GLightbox({
+        'href':'https://youtu.be/mzAb_GKjoSI',
+        'type':'video',
+        'source':'youtube',
+        'width':'900',
+        'autoPlayVideos':'true'
+      });
+    </script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

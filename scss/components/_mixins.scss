@@ -1,0 +1,19 @@
+@use '../custom' as *;
+// gradient mixin
+@mixin gradient {
+background: linear-gradient(to right,rgba($secondary,1),rgba($primary,1),rgba($primary,1),rgba($secondary,1));
+}
+@mixin text-gradient {
+    background:linear-gradient(to bottom right,$primary,$secondary-dark,$secondary,$secondary-dark) ;
+    background-clip: text ;
+    -webkit-background-clip: text ;
+    color: transparent ;
+    -webkit-text-fill-color: transparent ;
+}
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}

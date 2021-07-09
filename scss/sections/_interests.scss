@@ -1,0 +1,54 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.interest-section{
+    background-image: url("../../assets/img/green-motherboard-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#overlay{
+    background-color: rgba($secondary-dark,0.75);
+}
+a:link,a:visited,a:hover,a:active{
+    text-decoration: none;
+    color: $secondary-dark;
+}
+.text-box{
+    @include gradient;
+    border: 5px inset $secondary-dark;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 1rem;
+    transition: all 0.5s ease-in-out ;
+}
+.hover-zoom:hover{
+    transform: scale(1.05);
+}
+.collapsable{
+    transition: all 1s ease-out;
+    overflow: hidden;
+    & h1 {
+        @include text-gradient;
+        line-height: 4rem;
+    }
+}
+.closed{
+    padding: 0;
+    margin: 0;
+    height: 0;
+    border: 0px inset $secondary-dark;
+}
+.open{
+    height: 12rem;
+    vertical-align: middle;
+    @include media-breakpoint-down(lg){
+        height: 15rem;
+    }
+    @include media-breakpoint-down(md){
+        height: 18rem;
+    }
+    @include media-breakpoint-down(sm){
+        height: 27rem;
+    }
+}

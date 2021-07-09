@@ -1,0 +1,27 @@
+//temp theme colors
+$silver:  #d1d1d1;
+$blue-light:  #b3b3d1;
+$silver-dark:  #717171;
+$blueish-dark:  #7474af;
+$tertiary: #8653c0;
+//monochrome colors
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+//primary and secondary
+$primary:       $silver;
+$secondary:     $blue-light;
+$primary-dark:       $silver-dark;
+$secondary-dark:     $blueish-dark;
+//import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
